@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <body>
+
+    <header>
+        <div class="title-profile" >
+            <div class="left-menu">
+                <div class="google-img">
+                    <img src="https://w7.pngwing.com/pngs/523/198/png-transparent-google-logo-google-search-google-play-google-text-logo-number.png" alt="">
+                </div>
+                <div class="title-text">
+                    Pricavy & Terms
+                </div>
+            </div>
+            <div>
+                Menu
+            </div>
+        </div>
+
+    </header>
 
     
         
@@ -75,8 +92,12 @@
         foreach($paragraphs as $paragraph) { ?>
 
             <div class="container container-page">
-                <h4><?php echo $paragraph['question'] ?></h4>
-                <p><?php echo $paragraph['answer'] ?> <hr></p>
+                <div class="row">
+                    <div class="col-10 offset-1">
+                        <h4><?php echo $paragraph['question'] ?></h4>
+                        <p><?php echo $paragraph['answer'] ?> </p>
+                    </div>
+                </div>                
             </div>
 
         <?php }
